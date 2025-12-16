@@ -1,0 +1,815 @@
+/* Samakan ukuran gambar pada card layanan agar card selaras */
+.service-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+/* Label di dalam form berwarna kuning */
+.form label {
+    color: #ffd600 !important;
+}
+/* Navbar text and icon color to white */
+.header .navbar-nav .nav-link,
+.header .topbar-col a,
+.header .topbar-social a,
+.header .brand a {
+    color: #fff !important;
+}
+
+/* Navbar active link color (yellow) */
+.header .navbar-nav .nav-link.active {
+    color: #ffd600 !important;
+}
+
+/* Navbar hover color (yellow) */
+.header .navbar-nav .nav-link:hover {
+    color: #ffd600 !important;
+}
+
+/* Form label and button color (yellow) */
+.form label,
+.form .btn,
+.form input[type="submit"] {
+    color: #fff;
+    background: #ffd600 !important;
+    border: none;
+}
+
+.form .btn:hover,
+.form input[type="submit"]:hover {
+    background: #ffea00 !important;
+    color: #333;
+}
+
+/* Placeholder color for form input (selalu kuning, bukan putih/transparan) */
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #ffd600 !important;
+    opacity: 1 !important;
+}
+/**
+ * BERESLY CUSTOM OVERRIDE CSS
+ * File: css/custom-override.css
+ * 
+ * Skema Warna: PUTIH - KUNING - HIJAU
+ */
+
+/* ============================================
+   1. WARNA SCHEME - Putih, Kuning, Hijau
+   ============================================ */
+:root {
+    --putih: #ffffff;
+    --kuning: #ffd700;
+    --kuning-terang: #ffed4e;
+    --hijau: #28a745;
+    --hijau-gelap: #1e7e34;
+    --dark: #1a1a1a;
+}
+
+/* Header - Gradient Kuning ke Hijau */
+.header {
+    background: linear-gradient(135deg, #ffd700 0%, #28a745 100%) !important;
+}
+
+/* Footer - Hijau Gelap ke Hitam */
+.footer {
+    background: linear-gradient(135deg, #1e7e34 0%, #1a1a1a 100%) !important;
+}
+
+/* Call to Action & Newsletter - Hijau ke Kuning */
+.call-to-action,
+.newsletter {
+    background: linear-gradient(135deg, #28a745 0%, #ffd700 100%) !important;
+}
+
+/* Page Header - Kuning ke Hijau */
+.page-header {
+    background: linear-gradient(135deg, #ffd700 0%, #28a745 100%) !important;
+}
+
+/* Button - Kuning dengan hover Hijau */
+.btn {
+    background: #ffd700 !important;
+    color: #1a1a1a !important;
+    border: none !important;
+    font-weight: 700 !important;
+}
+
+.btn:hover {
+    background: #28a745 !important;
+    color: white !important;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* Back to Top - Kuning */
+.back-to-top {
+    background: #ffd700 !important;
+    color: #1a1a1a !important;
+    border: none !important;
+}
+
+.back-to-top:hover {
+    background: #28a745 !important;
+    color: white !important;
+    transform: translateY(-3px);
+}
+
+/* Links - Hijau dengan hover Kuning */
+a {
+    color: #28a745 !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #ffd700 !important;
+}
+
+/* Link di topbar - Putih */
+.topbar a {
+    color: white !important;
+}
+
+.topbar a:hover {
+    color: #ffd700 !important;
+}
+
+/* Link di navbar - Hijau */
+.navbar-nav .nav-link {
+    color: #28a745 !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffd700 !important;
+}
+
+/* Link di footer - Putih */
+.footer a {
+    color: white !important;
+}
+
+.footer a:hover {
+    color: #ffd700 !important;
+}
+
+/* Section header - Kuning accent */
+.section-header p {
+    color: #ffd700 !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-header h2 {
+    color: #1a1a1a !important;
+}
+
+.section-header::before {
+    background: linear-gradient(to right, #ffd700, #28a745, #ffd700) !important;
+}
+
+.section-header::after {
+    background: #ffd700 !important;
+}
+
+
+/* ============================================
+   2. TYPOGRAPHY & FONT
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif !important;
+    letter-spacing: 0.3px;
+    color: #333 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    color: #1a1a1a !important;
+}
+
+.header .brand a {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: white !important;
+}
+
+
+/* ============================================
+   3. CARD & BOX STYLING
+   ============================================ */
+
+/* Service Item - Border Kuning-Hijau */
+.service-item,
+.blog-item,
+.price-item {
+    border-radius: 20px !important;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 3px solid transparent;
+    background: white;
+}
+
+.service-item:hover,
+.blog-item:hover,
+.price-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.3) !important;
+    border-color: #ffd700;
+}
+
+.service-item img,
+.blog-item img {
+    border-radius: 20px 20px 0 0 !important;
+}
+
+/* Service & Blog Title - Hijau */
+.service-item h3,
+.blog-item h3 {
+    color: #28a745 !important;
+    margin: 20px 0 15px !important;
+    font-weight: 700 !important;
+}
+
+.service-item h3:hover,
+.blog-item h3:hover {
+    color: #ffd700 !important;
+}
+
+
+/* ============================================
+   4. PRICING TABLE - Kuning & Hijau
+   ============================================ */
+
+.price-item .price-header {
+    background: linear-gradient(135deg, #ffd700, #ffed4e) !important;
+}
+
+.price-item .price-icon i {
+    color: #28a745 !important;
+    font-size: 48px !important;
+}
+
+.price-item .price-title h2 {
+    color: #1a1a1a !important;
+}
+
+.price-item .price-pricing h2 {
+    font-size: 72px !important;
+    font-weight: 700 !important;
+    color: #28a745 !important;
+}
+
+.price-item .price-pricing h2 small {
+    color: #28a745 !important;
+}
+
+/* Featured Item - Badge Hijau */
+.price-item.featured-item {
+    border: 4px solid #28a745 !important;
+    transform: scale(1.05);
+}
+
+.price-item.featured-item::before {
+    content: '⭐ POPULER';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+}
+
+.price-footer .price-action a {
+    border-radius: 30px !important;
+    padding: 15px 40px !important;
+    background: #28a745 !important;
+    color: white !important;
+}
+
+.price-footer .price-action a:hover {
+    background: #ffd700 !important;
+    color: #1a1a1a !important;
+}
+
+
+/* ============================================
+   5. TESTIMONIAL - Hijau dengan text Putih
+   ============================================ */
+
+.testimonial .testimonial-content {
+    background: linear-gradient(135deg, #28a745, #1e7e34) !important;
+    position: relative;
+    border-radius: 20px !important;
+}
+
+.testimonial .testimonial-content::before {
+    content: '"';
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    font-size: 100px;
+    color: rgba(255, 215, 0, 0.3);
+    font-family: Georgia, serif;
+}
+
+.testimonial .testimonial-content p,
+.testimonial .testimonial-content h3,
+.testimonial .testimonial-content h4 {
+    color: white !important;
+}
+
+.testimonial .testimonial-img {
+    border: 5px solid #ffd700 !important;
+    border-radius: 50%;
+}
+
+
+/* ============================================
+   6. TEAM - Photo border Kuning
+   ============================================ */
+
+.team-item {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.4s;
+    border-radius: 20px !important;
+    overflow: hidden;
+}
+
+.team-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(40, 167, 69, 0.2) !important;
+}
+
+.team .team-img {
+    clip-path: circle(50%) !important;
+    -webkit-clip-path: circle(50%) !important;
+    border: 5px solid #ffd700 !important;
+}
+
+.team-text h2 {
+    color: #28a745 !important;
+}
+
+.team-text h3 {
+    color: #ffd700 !important;
+}
+
+.team-social a {
+    background: #28a745 !important;
+    color: white !important;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s;
+}
+
+.team-social a:hover {
+    background: #ffd700 !important;
+    color: #1a1a1a !important;
+    transform: translateY(-3px);
+}
+
+
+/* ============================================
+   7. ABOUT SECTION
+   ============================================ */
+
+.about-text h2 {
+    color: #28a745 !important;
+}
+
+.about-text h2 span {
+    color: #ffd700 !important;
+    font-size: 80px !important;
+}
+
+.about-text p {
+    color: #555 !important;
+    line-height: 1.8 !important;
+}
+
+
+/* ============================================
+   8. FEATURE SECTION
+   ============================================ */
+
+.feature-item h3 {
+    color: #28a745 !important;
+}
+
+.feature-item p {
+    color: #666 !important;
+}
+
+.feature-item img {
+    border: 3px solid #ffd700;
+    border-radius: 15px;
+}
+
+
+/* ============================================
+   9. FORM STYLING - Kuning & Hijau
+   ============================================ */
+
+.form-control,
+.custom-select {
+    border: 2px solid #e0e0e0 !important;
+    border-radius: 10px !important;
+    padding: 12px 20px !important;
+    transition: all 0.3s;
+}
+
+.form-control:focus,
+.custom-select:focus {
+    border-color: #ffd700 !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25) !important;
+    outline: none !important;
+}
+
+/* Hero form - Box Putih dengan accent Kuning */
+.hero .form {
+    background: rgba(255, 255, 255, 0.98) !important;
+    padding: 40px !important;
+    border-radius: 20px !important;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2) !important;
+    border: 3px solid #ffd700 !important;
+}
+
+.hero .form h3 {
+    color: #28a745 !important;
+    margin-bottom: 25px !important;
+    border-bottom: 3px solid #ffd700;
+    padding-bottom: 15px;
+}
+
+
+/* ============================================
+   10. FAQ ACCORDION - Kuning & Hijau
+   ============================================ */
+
+.card {
+    border: 2px solid #ffd700 !important;
+    margin-bottom: 15px !important;
+    border-radius: 15px !important;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #ffd700, #ffed4e) !important;
+    border-bottom: none !important;
+}
+
+.card-link {
+    color: #1a1a1a !important;
+    font-weight: 700 !important;
+}
+
+.card-link:hover {
+    color: #28a745 !important;
+}
+
+.card-link span {
+    background: #28a745 !important;
+    color: white !important;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-weight: 700;
+}
+
+.card-body {
+    color: #333 !important;
+    background: white !important;
+}
+
+
+/* ============================================
+   11. FOOTER - Hijau dengan accent Kuning
+   ============================================ */
+
+.footer h2 {
+    color: #ffd700 !important;
+    border-bottom: 3px solid #ffd700;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer p {
+    color: white !important;
+}
+
+.footer-social a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #ffd700;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s;
+    color: #1a1a1a !important;
+}
+
+.footer-social a:hover i {
+    background: #28a745;
+    color: white !important;
+    transform: rotateY(360deg);
+}
+
+
+/* ============================================
+   12. BUTTON STYLES - Kuning primary, Hijau hover
+   ============================================ */
+
+.btn {
+    border-radius: 30px !important;
+    padding: 12px 35px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    background: #ffd700 !important;
+    color: #1a1a1a !important;
+    border: none !important;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(40, 167, 69, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn i {
+    margin-right: 8px;
+    transition: transform 0.3s;
+}
+
+.btn:hover i {
+    transform: translateX(5px);
+}
+
+
+/* ============================================
+   13. NEWSLETTER & CTA
+   ============================================ */
+
+.newsletter h2,
+.call-to-action h2 {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.newsletter p,
+.call-to-action p {
+    color: white !important;
+}
+
+.newsletter .form input {
+    border-radius: 30px !important;
+    padding: 12px 25px !important;
+    border: 3px solid white !important;
+    background: white !important;
+}
+
+.newsletter .form button {
+    background: white !important;
+    color: #28a745 !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    border: 3px solid white !important;
+}
+
+.newsletter .form button:hover {
+    background: #ffd700 !important;
+    color: #1a1a1a !important;
+}
+
+
+/* ============================================
+   14. ANIMATIONS
+   ============================================ */
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.service-item:hover,
+.team-item:hover {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-item,
+.team-item,
+.blog-item {
+    animation: slideInUp 0.6s ease-out;
+}
+
+/* Stagger animation */
+.service-item:nth-child(1) { animation-delay: 0.1s; }
+.service-item:nth-child(2) { animation-delay: 0.2s; }
+.service-item:nth-child(3) { animation-delay: 0.3s; }
+.service-item:nth-child(4) { animation-delay: 0.4s; }
+.service-item:nth-child(5) { animation-delay: 0.5s; }
+.service-item:nth-child(6) { animation-delay: 0.6s; }
+
+/* Animated underline untuk nav links - Kuning */
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #ffd700;
+    transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+
+/* ============================================
+   15. BLOG META - Kuning & Hijau
+   ============================================ */
+
+.blog-item .meta {
+    color: #666 !important;
+}
+
+.blog-item .meta i {
+    color: #ffd700 !important;
+}
+
+.blog-item .meta a {
+    color: #28a745 !important;
+    font-weight: 600;
+}
+
+.blog-item .meta p {
+    color: #666 !important;
+}
+
+
+/* ============================================
+   16. SCROLLBAR - Kuning & Hijau
+   ============================================ */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #ffd700, #28a745);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #28a745, #ffd700);
+}
+
+
+/* ============================================
+   17. SELECTION - Kuning
+   ============================================ */
+
+::selection {
+    background: #ffd700;
+    color: #1a1a1a;
+}
+
+::-moz-selection {
+    background: #ffd700;
+    color: #1a1a1a;
+}
+
+
+/* ============================================
+   18. SPACING
+   ============================================ */
+
+.service,
+.team,
+.blog,
+.testimonial,
+.about,
+.feature,
+.faqs,
+.price {
+    padding: 80px 0 !important;
+    position: relative;
+}
+
+.section-header {
+    margin-bottom: 70px !important;
+}
+
+
+/* ============================================
+   19. RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+    .service-item,
+    .blog-item,
+    .price-item {
+        border-radius: 15px !important;
+    }
+    
+    .section-header h2 {
+        font-size: 32px !important;
+    }
+    
+    .hero h2 {
+        font-size: 36px !important;
+    }
+}
+
+
+/* ============================================
+   20. DECORATIVE ELEMENTS
+   ============================================ */
+
+/* Decorative shape - Kuning */
+.section-header::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 20px);
+    bottom: -50px;
+    background: #ffd700;
+    border-radius: 50% 50% 0 0;
+    z-index: -1;
+}
+
+/* Wave divider - Kuning dengan opacity */
+.service::before,
+.team::before,
+.testimonial::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 60'%3E%3Cpath fill='%23ffd700' fill-opacity='0.15' d='M0,32L48,37.3C96,43,192,53,288,53.3C384,53,480,43,576,42.7C672,43,768,53,864,53.3C960,53,1056,43,1152,37.3L1200,32L1200,0L1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3E%3C/path%3E%3C/svg%3E") no-repeat;
+    background-size: cover;
+}

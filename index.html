@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Beresly - Solusi Beres Kebersihan</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Beresly, Layanan Kebersihan, Cleaning Service, Rumah, Kantor" name="keywords">
+        <meta content="Beresly - Solusi Beres untuk Semua Kebutuhan Kebersihan Anda" name="description">
+
+        <link href="img/favicon.ico" rel="icon">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/custom-override.css" rel="stylesheet">
+            <!-- Modal Popup CSS (Bootstrap sudah include) -->
+        
+    </head>
+
+    <body>
+                <!-- Modal Trigger Button (bisa diletakkan di navbar/footer/section) -->
+                <button type="button" class="btn btn-warning d-none d-lg-inline-block" data-toggle="modal" data-target="#infoModal" style="position:fixed;bottom:30px;right:30px;z-index:1050;">Info Promo</button>
+
+                <!-- Modal Popup -->
+                <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="infoModalLabel">Promo Spesial Beresly!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/peaple-1.jpg" alt="Promo" class="img-fluid mb-3 rounded">
+                                <p>Dapatkan diskon <b>20%</b> untuk layanan Beres Bantu Pindahan selama bulan ini! Promo berlaku untuk pemesanan via website.</p>
+                                <a href="promo.html" class="btn btn-success">Lihat Semua Promo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal Popup -->
+                <header>
+        <div class="header home">
+            <div class="container-fluid">
+                <div class="header-top row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="brand">
+                            <a href="index.html">Beresly</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="topbar">
+                            <div class="topbar-col">
+                                <a href="tel:+62 858-1147-9917"><i class="fa fa-phone-alt"></i>+62 858-1147-9917</a>
+                            </div>
+                            <div class="topbar-col">
+                                <a href="mailto:info@beresly.com"><i class="fa fa-envelope"></i>info@beresly.com</a>
+                            </div>
+                            <div class="topbar-col">
+                                <div class="topbar-social">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar navbar-expand-lg bg-light navbar-light">
+                            <a href="#" class="navbar-brand">MENU</a>
+                            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                                <div class="navbar-nav ms-auto">
+                                    <a href="index.html" class="nav-item nav-link">Home</a>
+                                    <a href="about.html" class="nav-item nav-link">Tentang</a>
+                                    <a href="service.html" class="nav-item nav-link">Pelayanan</a>
+                                    <a href="portfolio.html" class="nav-item nav-link">Galeri</a>
+                                    <a href="contact.html" class="nav-item nav-link">Kontak</a>
+                                    <a href="testimoni.html" class="nav-item nav-link">Testimoni</a>
+                                    <a href="faq.html" class="nav-item nav-link">FAQ</a>
+                                    <a href="team.html" class="nav-item nav-link">Tim</a>
+                                    <a href="promo.html" class="nav-item nav-link">Promo</a>
+                                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+        <div class="wrapper">
+            <div class="header home">
+                <div class="container-fluid">
+                    <div class="hero row align-items-center">
+                        <div class="col-md-7">
+                            <h2>Solusi Beres Kebersihan</h2>
+                            <h2><span>Beresly</span> - Bersih, Rapi, Nyaman</h2>
+                            <p>Layanan kebersihan profesional untuk rumah, apartemen, kantor, dan properti Anda.</p>
+                            <a class="btn btn-success" href="promo.html">Lihat Promo</a>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form">
+                                <h3>Pesan Layanan</h3>
+                                <form>
+                                    <input class="form-control" type="text" placeholder="Nama Anda" id="wa-nama">
+                                    <input class="form-control" type="text" placeholder="Nomor HP" id="wa-hp">
+                                    <div class="control-group">
+                                        <select class="custom-select" id="wa-layanan">
+                                            <option selected>Pilih layanan</option>
+                                            <option value="Beres Kamar Tidur">Beres Kamar Tidur</option>
+                                            <option value="Beres Kamar Mandi">Beres Kamar Mandi</option>
+                                            <option value="Beres Dapur">Beres Dapur</option>
+                                            <option value="Beres Bantu Pindahan">Beres Bantu Pindahan</option>
+                                            <option value="Beres AC & Sofa">Beres AC & Sofa</option>
+                                            <option value="Beres Taman">Beres Taman</option>
+                                        </select>
+                                    </div>
+                                    <textarea class="form-control" placeholder="Pesan" id="wa-pesan"></textarea>
+                                    <button class="btn btn-success btn-block" type="button" onclick="kirimWA()">Pesan Sekarang</button>
+                                </form>
+                                    <script>
+                                    function kirimWA() {
+                                        var nama = document.getElementById('wa-nama').value;
+                                        var hp = document.getElementById('wa-hp').value;
+                                        var layanan = document.getElementById('wa-layanan').value;
+                                        var pesan = document.getElementById('wa-pesan').value;
+                                        var no_wa = '088214612609';
+                                        var text =
+                                            '*Pesan Layanan Beresly*%0A' +
+                                            'Nama: ' + encodeURIComponent(nama) + '%0A' +
+                                            'No HP: ' + encodeURIComponent(hp) + '%0A' +
+                                            'Layanan: ' + encodeURIComponent(layanan) + '%0A' +
+                                            'Pesan: ' + encodeURIComponent(pesan);
+                                        var url = 'https://wa.me/' + no_wa + '?text=' + text;
+                                        window.open(url, '_blank');
+                                    }
+                                    </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <img src="img/peaple-1.jpg" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="about-text">
+                                <h2><span>10</span> Tahun Pengalaman</h2>
+                                <p>
+                                    Beresly hadir sebagai solusi terpercaya untuk semua kebutuhan kebersihan Anda. Dengan pengalaman lebih dari 10 tahun, kami telah melayani ribuan pelanggan di seluruh Indonesia dengan standar kebersihan yang tinggi dan hasil maksimal.
+                                </p>
+                                <p>
+                                    Tim profesional kami terlatih menggunakan peralatan modern dan produk pembersih ramah lingkungan. Kami memahami bahwa setiap ruangan memiliki kebutuhan berbeda, karena itu kami menyediakan layanan yang dapat disesuaikan dengan kebutuhan Anda. Kepuasan pelanggan adalah prioritas utama kami.
+                                </p>
+                                <a class="btn" href="about.html">Pelajari Lebih Lanjut</a>
+                                <a class="btn btn-outline-info ml-2" href="https://instagram.com/beresly.id" target="_blank">Instagram Kami</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="container">
+                    <div class="section-header">
+                        <p>Layanan Beresly</p>
+                        <h2>Solusi Beres untuk Semua Kebutuhan Kebersihan</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="service-item">
+                                <img src="img/peaple-1.jpg" alt="Beres Kamar Tidur">
+                                <h3>Beres Kamar Tidur</h3>
+                                <p>Kamar tidur bersih, rapi, dan nyaman. Mulai dari merapikan tempat tidur, membersihkan debu, hingga mengepel lantai dengan produk berkualitas agar tidur Anda lebih nyenyak.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="service-item">
+                                <img src="img/kamar mandi.jpg" alt="Beres Kamar Mandi">
+                                <h3>Beres Kamar Mandi</h3>
+                                <p>Kamar mandi bersih, bebas kerak dan bau tidak sedap. Pembersihan menyeluruh pada lantai, dinding, wastafel, kloset, dan shower untuk kebersihan maksimal.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="service-item">
+                                <img src="img/dapur.jpg" alt="Beres Dapur">
+                                <h3>Beres Dapur</h3>
+                                <p>Dapur higienis, bebas minyak dan kotoran membandel. Pembersihan kompor, wastafel, meja dapur, dan peralatan masak agar dapur Anda selalu siap digunakan.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="service-item">
+                                <img src="img/pindahan barang.jpg" alt="Beres Bantu Pindahan">
+                                <h3>Beres Bantu Pindahan</h3>
+                                <p>Bersih-bersih menyeluruh sebelum atau sesudah pindahan. Tim kami siap membersihkan seluruh ruangan dengan tuntas, termasuk area yang sulit dijangkau.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="service-item">
+                                <img src="img/ac.jpg" alt="Beres AC & Sofa">
+                                <h3>Beres AC & Sofa</h3>
+                                <p>Pembersihan AC dan sofa secara menyeluruh agar udara tetap segar dan perabotan awet. Gunakan teknologi deep cleaning untuk hasil optimal.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="service-item">
+                                <img src="img/wah.jpg" alt="Beres Taman">
+                                <h3>Beres Taman</h3>
+                                <p>Taman rumah jadi asri, indah, dan bersih. Kami siap membersihkan daun kering, memangkas rumput, merapikan tanaman, dan membersihkan area taman.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="section-header left">
+                                <p>Mengapa Pilih Kami</p>
+                                <h2>Tim Profesional dan Layanan Berkelas Dunia</h2>
+                            </div>
+                            <p>
+                                Beresly menghadirkan standar kebersihan internasional dengan sentuhan lokal yang memahami kebutuhan Anda. Kami menggunakan peralatan modern, produk ramah lingkungan, dan tim yang terlatih untuk memberikan hasil terbaik. Kepercayaan pelanggan adalah aset terbesar kami.
+                            </p>
+                            <a class="btn" href="">Pelajari Lebih Lanjut</a>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row align-items-center feature-item">
+                                <div class="col-5">
+                                    <img src="img/ahli dan tim.jpg" alt="Feature">
+                                </div>
+                                <div class="col-7">
+                                    <h3>Tim Ahli & Berpengalaman</h3>
+                                    <p>
+                                        Setiap anggota tim kami telah melalui pelatihan khusus dan memiliki sertifikasi kebersihan profesional untuk memastikan hasil maksimal.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center feature-item">
+                                <div class="col-5">
+                                    <img src="img/oprasional-1.jpg" alt="Feature">
+                                </div>
+                                <div class="col-7">
+                                    <h3>Harga Terjangkau & Transparan</h3>
+                                    <p>
+                                        Kami menawarkan harga kompetitif tanpa biaya tersembunyi. Semua paket layanan dijelaskan dengan rinci sebelum Anda memesan.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center feature-item">
+                                <div class="col-5">
+                                    <img src="img/oprasional-2.jpg" alt="Feature">
+                                </div>
+                                <div class="col-7">
+                                    <h3>Cepat & Hasil Memuaskan</h3>
+                                    <p>
+                                        Layanan tepat waktu dengan hasil yang melampaui ekspektasi. Kami berkomitmen untuk memberikan kebersihan yang tahan lama.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team">
+                <div class="container">
+                    <div class="section-header">
+                        <p>Tim Kami</p>
+                        <h2>Kenali Tim Profesional Beresly</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/person-1.jpg" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Budi Santoso</h2>
+                                    <h3>CEO & Founder</h3>
+                                    <div class="team-social">
+                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/peson.jpg" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Siti Nurhaliza</h2>
+                                    <h3>Manajer Operasional</h3>
+                                    <div class="team-social">
+                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/oprasonal.jpg" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Ahmad Wijaya</h2>
+                                    <h3>Supervisor Tim</h3>
+                                    <div class="team-social">
+                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/oprasional-5.jpg" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Dewi Lestari</h2>
+                                    <h3>Spesialis Kebersihan</h3>
+                                    <div class="team-social">
+                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faqs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="section-header left">
+                                <p>Pertanyaan Umum</p>
+                                <h2>Yang Sering Ditanyakan</h2>
+                            </div>
+                            <img src="img/wah.jpg" alt="Image">
+                        </div>
+                        <div class="col-md-7">
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
+                                            <span>1</span> Berapa lama waktu yang dibutuhkan untuk pembersihan?
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Waktu pembersihan bervariasi tergantung jenis layanan dan luas area. Rata-rata 2-4 jam untuk rumah standar, namun kami akan memberikan estimasi waktu yang lebih akurat setelah survei awal.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                                            <span>2</span> Apakah saya perlu menyediakan alat pembersih?
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Tidak perlu. Tim kami membawa semua peralatan dan produk pembersih profesional yang dibutuhkan. Semua produk yang kami gunakan aman dan ramah lingkungan.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                                            <span>3</span> Bagaimana cara memesan layanan Beresly?
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Anda bisa memesan melalui website, telepon, WhatsApp, atau aplikasi mobile kami. Cukup pilih layanan yang diinginkan, tentukan jadwal, dan tim kami akan segera menghubungi Anda.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                                            <span>4</span> Apakah ada garansi untuk layanan yang diberikan?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Ya, kami memberikan garansi kepuasan 100%. Jika Anda tidak puas dengan hasil pembersihan, kami akan kembali melakukan pembersihan ulang tanpa biaya tambahan dalam waktu 24 jam.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                                            <span>5</span> Apakah layanan tersedia untuk area komersial?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Tentu saja. Kami melayani pembersihan untuk rumah tinggal, apartemen, kantor, klinik, toko, dan berbagai properti komersial lainnya dengan paket khusus yang disesuaikan.
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <a class="btn" href="">Tanya Lebih Banyak</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="price">
+                <div class="container">
+                    <div class="section-header">
+                        <p>Paket Harga</p>
+                        <h2>Harga Transparan Tanpa Biaya Tersembunyi</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="price-item">
+                                <div class="price-header">
+                                    <div class="price-icon">
+                                        <i class="fa fa-home"></i>
+                                    </div>
+                                    <div class="price-title">
+                                        <h2>Paket Standar</h2>
+                                    </div>
+                                    <div class="price-pricing">
+                                        <h2><small>Rp</small>350K</h2>
+                                    </div>
+                                </div>
+                                <div class="price-body">
+                                    <div class="price-des">
+                                        <ul>
+                                            <li>Pembersihan 2 Kamar Tidur</li>
+                                            <li>Pembersihan 1 Kamar Mandi</li>
+                                            <li>Pembersihan Ruang Tamu</li>
+                                            <li>Vakum & Pel Lantai</li>
+                                            <li>Durasi 3-4 Jam</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="price-footer">
+                                    <div class="price-action">
+                                        <a href=""><i class="fa fa-shopping-cart"></i>Pesan Sekarang</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="price-item featured-item">
+                                <div class="price-header">
+                                    <div class="price-icon">
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="price-title">
+                                        <h2>Paket Premium</h2>
+                                    </div>
+                                    <div class="price-pricing">
+                                        <h2><small>Rp</small>550K</h2>
+                                    </div>
+                                </div>
+                                <div class="price-body">
+                                    <div class="price-des">
+                                        <ul>
+                                            <li>Pembersihan 3 Kamar Tidur</li>
+                                            <li>Pembersihan 2 Kamar Mandi</li>
+                                            <li>Pembersihan Dapur & Ruang Tamu</li>
+                                            <li>Vakum & Pel Seluruh Area</li>
+                                            <li>Durasi 4-6 Jam</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="price-footer">
+                                    <div class="price-action">
+                                        <a href=""><i class="fa fa-shopping-cart"></i>Pesan Sekarang</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="price-item">
+                                <div class="price-header">
+                                    <div class="price-icon">
+                                        <i class="fa fa-gift"></i>
+                                    </div>
+                                    <div class="price-title">
+                                        <h2>Paket Deluxe</h2>
+                                    </div>
+                                    <div class="price-pricing">
+                                        <h2><small>Rp</small>850K</h2>
+                                    </div>
+                                </div>
+                                <div class="price-body">
+                                    <div class="price-des">
+                                        <ul>
+                                            <li>Pembersihan 4+ Kamar Tidur</li>
+                                            <li>Pembersihan 3 Kamar Mandi</li>
+                                            <li>Dapur, Ruang Tamu & Taman</li>
+                                            <li>Deep Cleaning Menyeluruh</li>
+                                            <li>Durasi 6-8 Jam</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="price-footer">
+                                    <div class="price-action">
+                                        <a href=""><i class="fa fa-shopping-cart"></i>Pesan Sekarang</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="newsletter">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h2>Dapatkan Penawaran Gratis</h2>
+                            <p>
+                                Daftarkan email Anda untuk mendapatkan promo dan penawaran spesial dari Beresly
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form">
+                                <input class="form-control" placeholder="Email Anda">
+                                <button class="btn">Kirim</button>
+                                <div class="mt-2">
+                                    <img src="img/person-1.jpg" alt="Newsletter" style="max-width:100px;border-radius:8px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="container">
+                    <div class="section-header">
+                        <p>Testimoni Pelanggan</p>
+                        <h2>Apa Kata Pelanggan Kami</h2>
+                    </div>
+                    <div class="owl-carousel testimonials-carousel">
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="img/peaple-1.jpg" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <p>
+                                    Pelayanan Beresly sangat memuaskan! Tim datang tepat waktu dan hasilnya luar biasa. Rumah saya jadi bersih dan wangi. Pasti akan pakai lagi untuk bulan depan.
+                                </p>
+                                <h3>Rina Susanti</h3>
+                                <h4>Ibu Rumah Tangga</h4>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="img/person-1.jpg" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <p>
+                                    Sebagai pemilik kos-kosan, saya sangat terbantu dengan layanan Beresly. Mereka profesional, harga terjangkau, dan hasilnya selalu memuaskan. Rekomendasi banget!
+                                </p>
+                                <h3>Agus Pratama</h3>
+                                <h4>Pengusaha Properti</h4>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="img/peson.jpg" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <p>
+                                    Kantor kami menggunakan jasa Beresly untuk pembersihan rutin. Timnya sangat detail dan teliti. Ruangan jadi lebih nyaman dan karyawan jadi lebih produktif.
+                                </p>
+                                <h3>Diana Putri</h3>
+                                <h4>HRD Manager</h4>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="img/oprasonal.jpg" alt="">
+                            </div>
+                            <div class="testimonial-content">
+                                <p>
+                                    Saya pakai layanan Beres AC & Sofa, hasilnya mantap! AC jadi lebih dingin dan sofa seperti baru lagi. Pelayanannya ramah dan harga sesuai kualitas.
+                                </p>
+                                <h3>Eko Wijaya</h3>
+                                <h4>Karyawan Swasta</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="call-to-action">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-9">
+                            <h2>Dapatkan Layanan Kebersihan Gratis</h2>
+                            <p>
+                                Hubungi kami sekarang untuk konsultasi dan penawaran khusus pelanggan baru
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="btn" href="contact.html">Hubungi Kami</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog">
+                            <!-- Multimedia Section: Video -->
+                            <div class="container mb-5">
+                                <div class="section-header">
+                                    <p>Video Beresly</p>
+                                    <h2>Lihat Cara Kerja Tim Kami</h2>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-8">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RYbuUg-igyU?si=DJRU8RnxROkMWWrg&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                <div class="container">
+                    <div class="section-header">
+                        <p>Artikel Terbaru</p>
+                        <h2>Tips dan Informasi Seputar Kebersihan</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-item">
+                                <img src="img/oprasional-6.jpg" alt="Blog">
+                                <h3>Tips Menjaga Kebersihan Rumah</h3>
+                                <div class="meta">
+                                    <i class="fa fa-list-alt"></i>
+                                    <a href="">Tips Kebersihan</a>
+                                    <i class="fa fa-calendar-alt"></i>
+                                    <p>15-Des-2024</p>
+                                </div>
+                                <p>
+                                    Menjaga kebersihan rumah tidak harus sulit. Dengan rutinitas sederhana setiap hari, rumah Anda akan selalu bersih dan nyaman. Simak tips lengkapnya di sini.
+                                </p>
+                                <a class="btn" href="">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-item">
+                                <img src="img/oprasional-7.jpg" alt="Blog">
+                                <h3>Cara Membersihkan Kaca dengan Benar</h3>
+                                <div class="meta">
+                                    <i class="fa fa-list-alt"></i>
+                                    <a href="">Tutorial Cleaning</a>
+                                    <i class="fa fa-calendar-alt"></i>
+                                    <p>12-Des-2024</p>
+                                </div>
+                                <p>
+                                    Kaca yang bersih membuat rumah terlihat lebih cerah dan luas. Pelajari teknik profesional untuk membersihkan kaca tanpa meninggalkan noda atau goresan.
+                                </p>
+                                <a class="btn" href="">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="blog-item">
+                                <img src="img/oprasional-5.jpg" alt="Blog">
+                                <h3>Manfaat Deep Cleaning untuk Kesehatan</h3>
+                                <div class="meta">
+                                    <i class="fa fa-list-alt"></i>
+                                    <a href="">Kesehatan</a>
+                                    <i class="fa fa-calendar-alt"></i>
+                                    <p>10-Des-2024</p>
+                                </div>
+                                <p>
+                                    Deep cleaning bukan hanya membuat rumah bersih, tapi juga meningkatkan kualitas udara dan kesehatan keluarga. Ketahui manfaat lengkapnya untuk kesehatan Anda.
+                                </p>
+                                <a class="btn" href="">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <h2>Hubungi Kami</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>Jl. Raya Margonda No. 123, Depok</p>
+                                <p><i class="fa fa-phone-alt"></i>+62 812-3456-7890</p>
+                                <p><i class="fa fa-envelope"></i>info@beresly.com</p>
+                                <div class="footer-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Tautan Berguna</h2>
+                                <a href="">Tentang Kami</a>
+                                <a href="">Cerita Kami</a>
+                                <a href="">Layanan Kami</a>
+                                <a href="">Galeri Proyek</a>
+                                <a href="">Hubungi Kami</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Informasi</h2>
+                                <a href="">Klien Kami</a>
+                                <a href="">Testimoni Klien</a>
+                                <a href="">Proyek Berjalan</a>
+                                <a href="">Layanan Pelanggan</a>
+                                <a href="">FAQ</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-form">
+                                <h2>Tetap Terhubung</h2>
+                                <p>
+                                    Daftarkan email Anda untuk mendapatkan update promo dan tips kebersihan terbaru dari Beresly
+                                </p>
+                                <input class="form-control" placeholder="Email Anda">
+                                <button class="btn">Daftar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Syarat & Ketentuan</a>
+                        <a href="">Kebijakan Privasi</a>
+                        <a href="">Cookie</a>
+                        <a href="">Bantuan & FAQ</a>
+                        <a href="">Kontak</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; 2024 Beresly. Semua Hak Dilindungi.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Dikembangkan dengan ❤️ oleh Tim Beresly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/interactive.js"></script>
+    </body>
+</html>
