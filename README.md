@@ -1,9 +1,11 @@
 # Beresly - Website Layanan Kebersihan
 
 ## Daftar Anggota Kelompok
-- [Nama 1] (NIM)
-- [Nama 2] (NIM)
-- [Nama 3] (NIM)
+- [Eka Ramadhani] [0110125011]
+- [Silfi Maharani] [0110125077]
+- [Raisha Kamila Zahra] [0110125060]
+- [Jaisya Muhammad Taqy] [0110125026]
+- [Azka Luthfi Asy'syafii] [0110125125]
 
 ## Deskripsi Website
 Beresly adalah website layanan kebersihan profesional untuk rumah, apartemen, kantor, dan properti lainnya. Website ini menyediakan informasi layanan, pemesanan online, promo, testimoni, dan fitur interaktif untuk kemudahan pelanggan.
