@@ -136,7 +136,7 @@
                                             'Layanan: ' + encodeURIComponent(layanan) + '%0A' +
                                             'Pesan: ' + encodeURIComponent(pesan);
                                         var url = 'https://wa.me/' + no_wa + '?text=' + text;
-                                        window.open(url, '_blank');
+                                        window.open(`https://wa.me/${waNumber}?text=${pesanEncoded}`, '_blank');
                                     }
                                     </script>
                             </div>
